@@ -717,6 +717,76 @@ def _build_edges(phases: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return edges
 
 
+def _summarize_learning_path(
+    all_gaps:    list[str],
+    phases:      list[dict[str, Any]],
+    target_role: str,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    """Build the flat ``learning_path`` summary and ``project_roadmap`` consumed
+    by the API compatibility layer (``main._roadmap_compat_payload``) and the
+    frontend, derived from the generated roadmap graph."""
+    gaps = [g for g in all_gaps if g]
+
+    # Sum estimated hours per matched skill from the generated nodes.
+    hours_by_skill: dict[str, int] = {}
+    for phase in phases:
+        for node in phase.get("nodes", []):
+            skill = node.get("matched_skill", "")
+            if not skill:
+                continue
+            hours_by_skill[skill] = hours_by_skill.get(skill, 0) + _to_int(
+                node.get("estimated_hours"), 0
+            )
+
+    def _weeks(skills: list[str]) -> int:
+        total_hours = sum(hours_by_skill.get(s, 20) for s in skills)
+        # ~10 study hours per week, with a two-week floor per skill.
+        return max(len(skills) * 2, -(-total_hours // 10))
+
+    # Split the gap skills across three progression phases.
+    total = len(gaps)
+    step  = max(1, -(-total // 3)) if total else 0  # ceil(total / 3)
+    foundation_skills   = gaps[0:step]
+    intermediate_skills = gaps[step:2 * step]
+    advanced_skills     = gaps[2 * step:]
+
+    phase_details = {
+        "foundation": {
+            "skills":         foundation_skills,
+            "duration_weeks": _weeks(foundation_skills),
+            "description":    "Establish the fundamentals for the core skill gaps.",
+        },
+        "intermediate": {
+            "skills":         intermediate_skills,
+            "duration_weeks": _weeks(intermediate_skills),
+            "description":    "Apply the skills to realistic, hands-on workloads.",
+        },
+        "advanced": {
+            "skills":         advanced_skills,
+            "duration_weeks": _weeks(advanced_skills),
+            "description":    "Master advanced topics and integrate them end-to-end.",
+        },
+    }
+
+    learning_path = {
+        "total_gaps":            total,
+        "phases":                phase_details,
+        "total_estimated_weeks": sum(p["duration_weeks"] for p in phase_details.values()),
+    }
+
+    project_roadmap = {
+        "projects": [
+            {
+                "project":     f"{target_role}: {skill.title()} Capstone",
+                "skill":       skill,
+                "description": f"Build a hands-on project that demonstrates {skill}.",
+            }
+            for skill in gaps
+        ]
+    }
+    return learning_path, project_roadmap
+
+
 def _slugify_skill(value: str) -> str:
     slug = re.sub(r"[^a-z0-9]+", "-", _normalize_text(value))
     slug = slug.strip("-")
@@ -1355,6 +1425,10 @@ class LearningAgent:
         edges       = result["edges"]
         total_nodes = sum(len(p.get("nodes", [])) for p in result["phases"])
 
+        learning_path, project_roadmap = _summarize_learning_path(
+            all_gaps, result["phases"], resolved_role
+        )
+
         roadmap = {
             "roadmap_id":    f"roadmap-agent--{profile.get('employee_id', 'emp')}",
             "roadmap_title": (
@@ -1383,6 +1457,10 @@ class LearningAgent:
             },
             "phases": result["phases"],
             "edges":  edges,
+            # Flat summaries consumed by the API compat layer and the frontend.
+            "skill_gaps":      all_gaps,
+            "learning_path":   learning_path,
+            "project_roadmap": project_roadmap,
             # ── NEW: surface DB result to caller ─────────────────────────────
             "db_result": result.get("db_result"),
         }

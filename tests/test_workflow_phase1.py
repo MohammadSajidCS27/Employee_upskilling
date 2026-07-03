@@ -39,7 +39,7 @@ def test_manager_workflow_endpoint_returns_matches_shape(monkeypatch):
         def get_employee_profiles(self):
             return [{"name": "Alex", "skills": ["python", "docker", "aws"]}]
 
-    app.state.postgres_service = _FakePostgres()
+    monkeypatch.setattr("src.main._get_postgres_service", lambda request: _FakePostgres())
 
     payload = {"job_description": "Need python, docker, aws"}
 

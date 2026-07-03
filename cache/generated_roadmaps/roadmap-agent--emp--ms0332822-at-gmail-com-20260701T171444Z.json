@@ -1,0 +1,555 @@
+{
+  "roadmap_id": "roadmap-agent--emp",
+  "roadmap_title": "Roadmap Agent - Employee -> Backend Developer",
+  "version": "1.0.0",
+  "generated_with": "roadmap-agent",
+  "generated_at": "2026-07-01T17:14:44.510612Z",
+  "metadata": {
+    "employee_id": null,
+    "name": null,
+    "current_role": null,
+    "target_role": "Backend Developer",
+    "experience_years": null,
+    "readiness_score": null,
+    "readiness_category": null,
+    "readiness_message": null,
+    "total_phases": 0,
+    "total_nodes": 0,
+    "total_edges": 0,
+    "source_roadmaps": [],
+    "uncovered_skills": [
+      "agentic ai",
+      "aggregates and entities",
+      "ai agents",
+      "ai safety",
+      "alignment",
+      "api gateway",
+      "api security jwt api keys",
+      "app router",
+      "astro",
+      "asynchronous message queues kafka",
+      "autogen",
+      "bounded contexts",
+      "caching strategies",
+      "ci cd for microservices",
+      "circuit breakers hystrix resilience4j",
+      "containerization docker",
+      "continuous deployment strategies blue green canary",
+      "cqrs command query responsibility segregation",
+      "crewai",
+      "data consistency models",
+      "data partitioning",
+      "database per service",
+      "deepspeed",
+      "designing microservices",
+      "distributed tracing jaeger zipkin",
+      "domain driven design ddd",
+      "event driven microservices",
+      "event sourcing",
+      "eventual consistency",
+      "fine tuning",
+      "framer motion",
+      "graalvm",
+      "guardrails",
+      "java 21",
+      "java 22",
+      "langgraph",
+      "llamaindex",
+      "llm orchestration",
+      "llm security",
+      "llmops",
+      "load balancing",
+      "logging elk stack fluentd",
+      "lombok",
+      "mapstruct",
+      "micronaut",
+      "microservices vs monolith",
+      "milvus",
+      "modulithic",
+      "monitoring prometheus grafana",
+      "motion one",
+      "next js 15",
+      "oauth2 openid connect",
+      "ollama",
+      "orchestration kubernetes",
+      "pattern matching",
+      "pgvector",
+      "pinecone",
+      "prompt engineering",
+      "qdrant",
+      "quarkus",
+      "qwik",
+      "radix",
+      "rag",
+      "rate limiting",
+      "react server components",
+      "remix",
+      "runes",
+      "service discovery",
+      "service mesh istio linkerd",
+      "service mesh security",
+      "shadcn",
+      "spring ai",
+      "spring boot 3",
+      "svelte 5",
+      "sveltekit",
+      "synchronous rest grpc",
+      "tailwindcss",
+      "tanstack router",
+      "transformers",
+      "understanding microservices",
+      "unsloth",
+      "vector databases",
+      "virtual threads",
+      "vllm",
+      "weaviate"
+    ],
+    "agent_issues": [
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "aggregates and entities"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "api gateway"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "api security jwt api keys"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "asynchronous message queues kafka"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "bounded contexts"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "caching strategies"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "ci cd for microservices"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "circuit breakers hystrix resilience4j"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "containerization docker"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "continuous deployment strategies blue green canary"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "cqrs command query responsibility segregation"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "data consistency models"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "data partitioning"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "database per service"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "designing microservices"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "distributed tracing jaeger zipkin"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "domain driven design ddd"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "event sourcing"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "event driven microservices"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "eventual consistency"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "load balancing"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "logging elk stack fluentd"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "microservices vs monolith"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "monitoring prometheus grafana"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "oauth2 openid connect"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "orchestration kubernetes"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "rate limiting"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "service discovery"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "service mesh istio linkerd"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "service mesh security"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "synchronous rest grpc"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "understanding microservices"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "rag"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "llmops"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "agentic ai"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "ai agents"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "prompt engineering"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "fine tuning"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "transformers"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "llamaindex"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "vllm"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "ollama"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "deepspeed"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "unsloth"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "crewai"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "autogen"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "langgraph"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "llm orchestration"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "vector databases"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "pgvector"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "pinecone"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "weaviate"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "qdrant"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "milvus"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "llm security"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "ai safety"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "alignment"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "guardrails"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "spring boot 3"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "spring ai"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "quarkus"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "micronaut"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "graalvm"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "virtual threads"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "lombok"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "mapstruct"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "modulithic"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "java 21"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "java 22"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "pattern matching"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "next js 15"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "react server components"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "app router"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "tanstack router"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "sveltekit"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "svelte 5"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "runes"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "astro"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "qwik"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "remix"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "tailwindcss"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "shadcn"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "radix"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "framer motion"
+      },
+      {
+        "severity": "critical",
+        "code": "missing_skill_coverage",
+        "skill": "motion one"
+      }
+    ],
+    "agent_trace_summary": {
+      "trace_file": "roadmap_agent/agent_trace.json",
+      "report_file": "roadmap_agent/agent_report.md",
+      "total_events": 175,
+      "observations": 1,
+      "decisions": 86,
+      "tool_calls": 87,
+      "validations": 1,
+      "fallbacks": 0
+    },
+    "roadmap_slug": "roadmap-agent--emp--ms0332822-at-gmail-com"
+  },
+  "phases": [],
+  "edges": [],
+  "db_result": {
+    "status": "dry_run",
+    "roadmap_id": "roadmap-agent--emp",
+    "phases": 0,
+    "nodes": 0,
+    "edges": 0
+  }
+}

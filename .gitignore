@@ -1,0 +1,41 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+test_learning_pathway.db
+
+# Virtual environments
+.venv/
+
+# Environment variables (NEVER push credentials)
+.env
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+
+# Frontend dependencies/build caches
+frontend/node_modules/
+frontend/.vite/
+
+# Optional local data/cache artifacts
+cache/*.json
+chroma_db/*.json
+
+# Local scratch and maintenance artifacts
+add_*.py
+fix_*.py
+update_views.py
+scan_chars.py
+run_acceptance_tests.py
+final_root_cause_test.py
+test_headings.py
+pytest_output.txt
+test1.txt
+agent_trace.json
+Siemens ID.html
+Siemens ID_files/

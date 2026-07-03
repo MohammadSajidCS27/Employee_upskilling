@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Siemens ID</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="shortcut icon" href="https://cdn.login.siemens.com/public/favicon_16x16.ico">
+
+  <style>
+    @font-face {
+      font-family: "ulp-font";
+      src: url("https://cdn.login.siemens.com/public/fonts/SiemensSans_Prof_Roman.woff");
+    }
+  </style>
+
+  <link rel="stylesheet" href="/static/siemens-id-files/main_wcag_compliant.cdn.min.css">
+  <style id="custom-styles-container">
+    :root, .af-custom-form-container .af-form { --primary-color: #0CC; }
+    :root, .af-custom-form-container .af-form { --button-font-color: #000028; }
+    :root {
+      --secondary-button-border-color: #0CC;
+      --social-button-border-color: #0CC;
+      --radio-button-border-color: #0CC;
+      --secondary-button-text-color: #0CC;
+      --link-color: #0CC;
+      --title-font-color: #FFF;
+      --font-default-color: #FFF;
+      --widget-background-color: #23233C;
+      --box-border-color: #23233C;
+      --font-light-color: #B3B3BE;
+      --input-text-color: #FFF;
+      --input-border-color: #B3B3BE;
+      --border-default-color: #B3B3BE;
+      --input-background-color: #00183B;
+      --icon-default-color: #B3B3BE;
+      --error-color: #FF7687;
+      --error-text-color: #000000;
+      --success-color: #13a688;
+      --base-focus-color: #B3B3BE;
+      --transparency-focus-color: rgba(179, 179, 190, 0.15);
+      --base-hover-color: #000028;
+      --transparency-hover-color: rgba(0, 0, 40, var(--hover-transparency-value));
+    }
+
+    @font-face {
+      font-family: "ULP Custom";
+      font-style: normal;
+      font-weight: var(--font-default-weight);
+      src: local("ULP Custom"), url("https://cdn.login.siemens.com/public/fonts/SiemensSans_Prof_Roman.woff") format("woff");
+    }
+
+    body {
+      --font-family: "ULP Custom", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    html, :root {
+      font-size: 87.5%;
+      --default-font-size: 1rem;
+      --small-font-size: 0.8571428571rem;
+      --title-font-size: 1.7142857143rem;
+      --lg-font-size: 1.1428571429rem;
+      --xl-font-size: 1.4285714286rem;
+      --spacing: 0.5714285714rem;
+    }
+
+    .main-layout {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    .prompt-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    main._widget {
+      padding: 0 !important;
+      min-height: fit-content !important;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer {
+      color: #FFFFFF;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      display: inline-flex;
+      padding: 2vh;
+      position: sticky;
+      position: -webkit-sticky;
+      z-index: 2;
+      bottom: 0;
+      left: 0;
+      background-color: #000028;
+    }
+
+    .footer ul {
+      text-align: center;
+    }
+
+    .footer ul li {
+      display: inline-flex;
+      margin: 0 4px;
+    }
+
+    .footer a {
+      color: #FFFFFF;
+      line-height: 20px;
+    }
+
+    .footer a:hover {
+      color: #00CCCC;
+    }
+
+    .footerLinks {
+      width: 100%;
+      display: flex;
+    }
+
+    .footerInfo {
+      display: flex;
+      width: 30%;
+      justify-content: right;
+    }
+
+    .siemens-navbar-content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      padding: 2vh;
+    }
+
+    .siemens-navbar {
+      width: 100%;
+      position: sticky;
+      position: -webkit-sticky;
+      z-index: 10;
+      top: 0;
+      background-color: #000028;
+    }
+
+    .siemens-navbar a {
+      color: #FFFFFF;
+      line-height: 20px;
+    }
+
+    .siemens-navbar a:hover {
+      color: #00CCCC;
+    }
+
+    .siemens-navbar-links {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .siemens-navbar ul {
+      text-align: center;
+    }
+
+    .siemens-navbar ul li {
+      display: inline-flex;
+      margin: 0 4px;
+    }
+
+    [data-action-button-primary]:disabled,
+    [data-action-button-secondary]:disabled {
+      background-color: #737389;
+      color: #000028;
+      pointer-events: none;
+      border: none;
+    }
+
+    .loading-icon {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-layout">
+    <div class="prompt-wrapper">
+      <div class="siemens-navbar">
+        <div class="siemens-navbar-content">
+          <div class="siemens-navbar-logo">
+            <a href="https://www.siemens.com/" target="_blank" rel="noreferrer">
+              <img src="/static/siemens-id-files/sie-logo-white-rgb.svg" alt="Siemens Logo" width="126.25" height="20">
+            </a>
+          </div>
+          <div class="siemens-navbar-links">
+            <ul>
+              <li><a href="https://sp.login.siemens.com/" target="_blank" rel="noreferrer">Service Portal</a></li>
+              <li><a href="https://id.login.siemens.com/" target="_blank" rel="noreferrer">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main class="_widget login-id">
+        <section class="c5431f316 _prompt-box-outer ca8ae2309">
+          <div class="cea408cbe c3294138f">
+            <div class="c6cde4daa">
+              <header class="ca43254f0 c499f492f" id="screen-header" tabindex="-1">
+                <div title="Siemens ID" id="custom-prompt-logo" style="width: auto !important; height: 60px !important; position: static !important; margin: auto !important; padding: 0 !important; background-color: transparent !important; background-position: center !important; background-size: contain !important; background-repeat: no-repeat !important"></div>
+                <img class="c7bbeb26c ca2220b5a" id="prompt-logo-center" src="/static/siemens-id-files/sie-logo-white-rgb-mfa.svg" alt="Siemens ID">
+                <h1 class="cba8df1ce c9b7c85f1">Create account</h1>
+                <div class="cddf422f5 cbdcf07fd">
+                  <p class="c5ff91828 c4ff0973c">Set up your Siemens account</p>
+                </div>
+              </header>
+
+              <div class="c5b9cb0cf c56e48ef2">
+                <div class="cc4069bbe cc22a6267">
+                  <div class="c4402ca7c">
+                    <form id="signup-form" class="c583c0a13 _form-login-id" data-form-primary="true" data-disable-html-validations="true" novalidate>
+                      <div id="ulp-error-announcer" class="screen-reader-only" aria-live="assertive" aria-atomic="true"></div>
+
+                      <div class="input-wrapper _input-wrapper">
+                        <div class="cb4eb055c c48f044e7 text cb62648e6 ulp-field">
+                          <label id="name-label" class="cb1ce033b ce3dd32dd c019efb25" for="name">Full name <span class="required" aria-hidden="true">*</span></label>
+                          <input class="input c2b8d38fa cc829e2ad" name="name" id="name" type="text" aria-labelledby="name-label" aria-required="true" autocomplete="name" required>
+                        </div>
+                      </div>
+
+                      <div class="input-wrapper _input-wrapper">
+                        <div class="cb4eb055c c48f044e7 text cb62648e6 ulp-field">
+                          <label id="email-label" class="cb1ce033b ce3dd32dd c019efb25" for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+                          <input class="input c2b8d38fa cc829e2ad" inputmode="email" name="email" id="email" type="email" aria-labelledby="email-label" aria-required="true" autocomplete="email" autocapitalize="none" spellcheck="false" required>
+                        </div>
+                      </div>
+
+                      <div class="input-wrapper _input-wrapper">
+                        <div class="cb4eb055c c48f044e7 text cb62648e6 ulp-field">
+                          <label id="password-label" class="cb1ce033b ce3dd32dd c019efb25" for="password">Password <span class="required" aria-hidden="true">*</span></label>
+                          <input class="input c2b8d38fa cc829e2ad" name="password" id="password" type="password" aria-labelledby="password-label" aria-required="true" autocomplete="new-password" minlength="8" required>
+                        </div>
+                      </div>
+
+                      <div class="input-wrapper _input-wrapper">
+                        <div class="cb4eb055c c48f044e7 text cb62648e6 ulp-field">
+                          <label id="department-label" class="cb1ce033b ce3dd32dd c019efb25" for="department">Department</label>
+                          <input class="input c2b8d38fa cc829e2ad" name="department" id="department" type="text" aria-labelledby="department-label" autocomplete="organization">
+                        </div>
+                      </div>
+
+                      <div class="input-wrapper _input-wrapper">
+                        <div class="cb4eb055c c48f044e7 text cb62648e6 ulp-field">
+                          <label id="role-label" class="cb1ce033b ce3dd32dd c019efb25" for="role">Role</label>
+                          <input class="input c2b8d38fa cc829e2ad" name="role" id="role" type="text" aria-labelledby="role-label" autocomplete="organization-title">
+                        </div>
+                      </div>
+
+                      <div class="input-wrapper _input-wrapper">
+                        <div class="cb4eb055c c48f044e7 text cb62648e6 ulp-field">
+                          <label id="experience-label" class="cb1ce033b ce3dd32dd c019efb25" for="experience_years">Years of experience</label>
+                          <input class="input c2b8d38fa cc829e2ad" name="experience_years" id="experience_years" type="number" min="0" max="50" value="0" aria-labelledby="experience-label">
+                        </div>
+                      </div>
+
+                      <div id="signup-error" class="ulp-error-info" style="display:none; color:#FF7687; margin-top: 8px;"></div>
+
+                      <div class="c854fadc6">
+                        <button type="submit" class="cc9c37347 ccfae5bcb ce0a9fe30 cf9a2ed2e _button-login-id" data-action-button-primary="true" id="signup-button">
+                          <span id="formSubmitButtonText">Create account</span>
+                          <div id="formLoadingIcon" class="loading-icon"></div>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div id="ulp-container-form-footer-start"></div>
+                <div class="ulp-alternate-action _alternate-action __s16nu9">
+                  <p class="c5ff91828 c4ff0973c ce2e12ef9">
+                    Already have an account?
+                    <a class="c41cc1129 caabfe509" href="/login">Log in</a>
+                  </p>
+                </div>
+                <div id="ulp-container-form-footer-end"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footerLinks">
+          <ul>
+            <li><a href="https://www.siemens.com/corporate_info" target="_blank" rel="noreferrer">Corporate Information</a></li>
+            <li><a href="https://www.siemens.com/privacy" target="_blank" rel="noreferrer">Privacy Notice</a></li>
+            <li><a href="https://www.siemens.com/cookie-notice" target="_blank" rel="noreferrer">Cookie Notice</a></li>
+            <li><a href="https://www.siemens.com/terms_of_use" target="_blank" rel="noreferrer">Terms of Use</a></li>
+            <li><a href="https://www.siemens.com/digital_id_en" target="_blank" rel="noreferrer">Digital ID</a></li>
+          </ul>
+        </div>
+        <div class="footerInfo">
+          <div id="footerCopyright"></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var footer = document.getElementById('footerCopyright');
+      if (footer) {
+        footer.textContent = '\u00A9 ' + new Date().getFullYear() + ' Siemens';
+      }
+
+      var form = document.getElementById('signup-form');
+      var errorBox = document.getElementById('signup-error');
+      var button = document.getElementById('signup-button');
+      var submitText = document.getElementById('formSubmitButtonText');
+      var loadingIcon = document.getElementById('formLoadingIcon');
+
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        if (errorBox) {
+          errorBox.style.display = 'none';
+          errorBox.textContent = '';
+        }
+
+        var payload = {
+          name: (document.getElementById('name').value || '').trim(),
+          email: (document.getElementById('email').value || '').trim(),
+          password: document.getElementById('password').value || '',
+          department: (document.getElementById('department').value || '').trim(),
+          role: (document.getElementById('role').value || '').trim(),
+          experience_years: parseInt(document.getElementById('experience_years').value || '0', 10) || 0
+        };
+
+        if (!payload.name || !payload.email || !payload.password) {
+          if (errorBox) {
+            errorBox.textContent = 'Full name, email, and password are required.';
+            errorBox.style.display = 'block';
+          }
+          return;
+        }
+
+        button.disabled = true;
+        submitText.style.display = 'none';
+        loadingIcon.style.display = 'inline-block';
+
+        fetch('/api/auth/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
+          body: JSON.stringify(payload)
+        })
+          .then(function (response) {
+            return response.json().then(function (data) {
+              return { ok: response.ok, data: data };
+            });
+          })
+          .then(function (result) {
+            if (result.ok && result.data && result.data.status === 'success') {
+              window.location.href = '/ui/#overview';
+              return;
+            }
+
+            throw new Error((result.data && result.data.detail) || 'Signup failed. Please try again.');
+          })
+          .catch(function (err) {
+            if (errorBox) {
+              errorBox.textContent = err.message || 'An error occurred. Please try again later.';
+              errorBox.style.display = 'block';
+            }
+            button.disabled = false;
+            submitText.style.display = 'inline-block';
+            loadingIcon.style.display = 'none';
+          });
+      });
+    })();
+  </script>
+</body>
+</html>

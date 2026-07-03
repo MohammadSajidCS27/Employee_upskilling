@@ -1,0 +1,38 @@
+Ravi Kumar
+Senior Backend Engineer
+
+Contact: ravi.kumar@email.com | (555) 987-6543 | LinkedIn: linkedin.com/in/ravikumar
+
+PROFESSIONAL SUMMARY
+Backend engineer with 9 years of experience delivering microservices, API platforms, and cloud-native systems. Strong focus on Java, Spring Boot, service discovery, API gateway design, Docker-based delivery, and CI/CD automation.
+
+TECHNICAL SKILLS
+Programming Languages: Java, Python, TypeScript
+Frameworks & Platforms: Spring Boot, Spring Framework, Microservices, REST APIs, Node.js
+Architecture: Service Discovery, API Gateway, CQRS, Domain-Driven Design, Bounded Contexts, Circuit Breakers
+Databases: PostgreSQL, MongoDB, Redis, Database per Service
+Cloud & DevOps: Docker, Kubernetes, AWS, Jenkins, Git, CI/CD
+Messaging & Observability: Kafka, Event-Driven Architecture, Logging, Monitoring
+
+PROFESSIONAL EXPERIENCE
+
+Senior Backend Engineer | TechCorp Inc. | 2021-Present
+- Designed and delivered microservices using Spring Boot, Docker, and Kubernetes
+- Built API gateway integrations and service discovery flows for internal platforms
+- Implemented REST APIs and event-driven messaging with Kafka
+- Automated CI/CD pipelines using Jenkins and Git-based workflows
+- Improved resilience with circuit breakers and retry strategies
+
+Backend Engineer | SoftTech Solutions | 2017-2021
+- Built enterprise Java services and migrated monolith components to microservices
+- Worked with PostgreSQL and MongoDB for service-specific data storage
+- Applied CQRS and domain-driven design for complex business workflows
+- Supported cloud deployment on AWS with Docker and Kubernetes
+
+EDUCATION
+Bachelor of Technology in Computer Science and Engineering
+Institute of Technology | 2013-2017
+
+CERTIFICATIONS
+- AWS Certified Developer
+- Oracle Certified Professional, Java SE

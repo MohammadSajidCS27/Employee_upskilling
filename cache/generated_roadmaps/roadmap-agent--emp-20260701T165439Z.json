@@ -1,0 +1,101 @@
+{
+  "roadmap_id": "roadmap-agent--emp",
+  "roadmap_title": "Employee → AI Engineer",
+  "version": "1.0.0",
+  "generated_with": "langgraph-learning-agent",
+  "generated_at": "2026-07-01T16:54:39.924956+00:00",
+  "metadata": {
+    "employee_id": null,
+    "name": null,
+    "current_role": null,
+    "target_role": "AI Engineer",
+    "experience_years": null,
+    "readiness_score": null,
+    "readiness_category": null,
+    "readiness_message": null,
+    "total_phases": 0,
+    "total_nodes": 0,
+    "total_edges": 0,
+    "source_roadmaps": [],
+    "uncovered_skills": [],
+    "agent_issues": [],
+    "roadmap_slug": "roadmap-agent--emp"
+  },
+  "phases": [],
+  "edges": [],
+  "skill_gaps": [
+    "machine learning",
+    "pytorch"
+  ],
+  "learning_path": {
+    "total_gaps": 2,
+    "phases": {
+      "foundation": {
+        "skills": [
+          "machine learning"
+        ],
+        "duration_weeks": 4,
+        "description": "Learn fundamentals and prerequisites"
+      },
+      "intermediate": {
+        "skills": [
+          "pytorch"
+        ],
+        "duration_weeks": 3,
+        "description": "Build practical projects"
+      },
+      "advanced": {
+        "skills": [],
+        "duration_weeks": 4,
+        "description": "Master and specialize"
+      }
+    },
+    "total_estimated_weeks": 11
+  },
+  "project_roadmap": {
+    "target_role": "AI Engineer",
+    "projects": [
+      {
+        "project": "Apply machine learning",
+        "skills": [
+          "machine learning"
+        ],
+        "duration_weeks": 2,
+        "difficulty": "Intermediate"
+      },
+      {
+        "project": "Apply pytorch",
+        "skills": [
+          "pytorch"
+        ],
+        "duration_weeks": 2,
+        "difficulty": "Intermediate"
+      }
+    ],
+    "total_projects": 2,
+    "total_duration_weeks": 4,
+    "methodology": "roadmap.sh-style structured learning"
+  },
+  "learning_resources": {
+    "skills": [
+      "machine learning",
+      "pytorch"
+    ],
+    "learning_style": "balanced",
+    "recommended_resources": {
+      "coursera": [
+        "machine learning"
+      ]
+    },
+    "resource_count": 1
+  },
+  "thought_process": [
+    "Generate roadmap.sh-style roadmap for: AI Engineer",
+    "[THOUGHT] Generating roadmap.sh-style roadmap for: AI Engineer\nSkills to cover: machine learning, pytorch\nStrategy: resolve best roadmap per skill → select gap-relevant nodes → apply dependency closure → assemble phases with edges",
+    "[ACTION] Resolved roadmaps for 0/2 skills\n  machine learning → not found\n  pytorch → not found",
+    "[OBSERVE] Selected 0 nodes across 0 phases\nSource roadmaps: none\nUncovered skills: none\nDependency edges: 0",
+    "[ACTION] Built roadmap\n  Phases: 0 | Nodes: 0 | Edges: 0\n  Estimated duration: 11 weeks",
+    "[REFLECTION] Mapped resources across 1 platforms\n  Platforms: coursera",
+    "[SUMMARY] Roadmap finalized ✓\n  0 nodes · 0 phases · 0 edges\n  Sources: none\n  Validation: 0 issues"
+  ]
+}

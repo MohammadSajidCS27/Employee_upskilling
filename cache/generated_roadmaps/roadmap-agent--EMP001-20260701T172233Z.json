@@ -1,0 +1,299 @@
+{
+  "roadmap_id": "roadmap-agent--EMP001",
+  "roadmap_title": "Roadmap Agent - Unknown -> Full Stack Developer",
+  "version": "1.0.0",
+  "generated_with": "roadmap-agent",
+  "generated_at": "2026-07-01T17:22:33.355189Z",
+  "metadata": {
+    "employee_id": "EMP001",
+    "name": "Unknown",
+    "current_role": "Machine Learning Engineer",
+    "target_role": "Full Stack Developer",
+    "experience_years": 0,
+    "readiness_score": 9.52,
+    "readiness_category": "early_stage",
+    "readiness_message": "Good starting point, structured plan needed",
+    "total_phases": 3,
+    "total_nodes": 9,
+    "total_edges": 6,
+    "source_roadmaps": [
+      "fallback_roadmap"
+    ],
+    "uncovered_skills": [],
+    "agent_issues": [],
+    "agent_trace_summary": {
+      "trace_file": "roadmap_agent/agent_trace.json",
+      "report_file": "roadmap_agent/agent_report.md",
+      "total_events": 12,
+      "observations": 1,
+      "decisions": 4,
+      "tool_calls": 5,
+      "validations": 1,
+      "fallbacks": 1
+    },
+    "roadmap_slug": "roadmap-agent--EMP001"
+  },
+  "phases": [
+    {
+      "phase_id": "fallback--foundation",
+      "phase_title": "Foundation Setup",
+      "phase_order": 1,
+      "skill": "multi-skill",
+      "source": "fallback_roadmap",
+      "nodes": [
+        {
+          "node_id": "fallback--api-gateway--foundation",
+          "label": "Api Gateway Fundamentals",
+          "type": "topic",
+          "category": "foundation",
+          "importance": "core",
+          "difficulty": "beginner",
+          "estimated_hours": 10,
+          "depends_on": [],
+          "resources": {
+            "type": "learning",
+            "format": "guided"
+          },
+          "matched_skill": "api gateway",
+          "source_roadmap": "fallback_roadmap",
+          "original_node_id": "api-gateway--foundation",
+          "skill_status": "in_progress",
+          "skill_priority": "high",
+          "skill_importance": "core",
+          "status": "available"
+        },
+        {
+          "node_id": "fallback--postgresql--foundation",
+          "label": "Postgresql Fundamentals",
+          "type": "topic",
+          "category": "foundation",
+          "importance": "core",
+          "difficulty": "beginner",
+          "estimated_hours": 10,
+          "depends_on": [],
+          "resources": {
+            "type": "learning",
+            "format": "guided"
+          },
+          "matched_skill": "postgresql",
+          "source_roadmap": "fallback_roadmap",
+          "original_node_id": "postgresql--foundation",
+          "skill_status": "locked",
+          "skill_priority": "critical",
+          "skill_importance": "core",
+          "status": "locked"
+        },
+        {
+          "node_id": "fallback--docker--foundation",
+          "label": "Docker Fundamentals",
+          "type": "topic",
+          "category": "foundation",
+          "importance": "core",
+          "difficulty": "beginner",
+          "estimated_hours": 10,
+          "depends_on": [],
+          "resources": {
+            "type": "learning",
+            "format": "guided"
+          },
+          "matched_skill": "docker",
+          "source_roadmap": "fallback_roadmap",
+          "original_node_id": "docker--foundation",
+          "skill_status": "locked",
+          "skill_priority": "critical",
+          "skill_importance": "core",
+          "status": "locked"
+        }
+      ]
+    },
+    {
+      "phase_id": "fallback--core",
+      "phase_title": "Core Skill Development",
+      "phase_order": 2,
+      "skill": "multi-skill",
+      "source": "fallback_roadmap",
+      "nodes": [
+        {
+          "node_id": "fallback--api-gateway--core",
+          "label": "Implement Api Gateway in Real Workloads",
+          "type": "topic",
+          "category": "core",
+          "importance": "core",
+          "difficulty": "intermediate",
+          "estimated_hours": 14,
+          "depends_on": [
+            "fallback--api-gateway--foundation"
+          ],
+          "resources": {
+            "type": "practice",
+            "format": "lab"
+          },
+          "matched_skill": "api gateway",
+          "source_roadmap": "fallback_roadmap",
+          "original_node_id": "api-gateway--core",
+          "skill_status": "in_progress",
+          "skill_priority": "high",
+          "skill_importance": "core"
+        },
+        {
+          "node_id": "fallback--postgresql--core",
+          "label": "Implement Postgresql in Real Workloads",
+          "type": "topic",
+          "category": "core",
+          "importance": "core",
+          "difficulty": "intermediate",
+          "estimated_hours": 14,
+          "depends_on": [
+            "fallback--postgresql--foundation"
+          ],
+          "resources": {
+            "type": "practice",
+            "format": "lab"
+          },
+          "matched_skill": "postgresql",
+          "source_roadmap": "fallback_roadmap",
+          "original_node_id": "postgresql--core",
+          "skill_status": "locked",
+          "skill_priority": "critical",
+          "skill_importance": "core"
+        },
+        {
+          "node_id": "fallback--docker--core",
+          "label": "Implement Docker in Real Workloads",
+          "type": "topic",
+          "category": "core",
+          "importance": "core",
+          "difficulty": "intermediate",
+          "estimated_hours": 14,
+          "depends_on": [
+            "fallback--docker--foundation"
+          ],
+          "resources": {
+            "type": "practice",
+            "format": "lab"
+          },
+          "matched_skill": "docker",
+          "source_roadmap": "fallback_roadmap",
+          "original_node_id": "docker--core",
+          "skill_status": "locked",
+          "skill_priority": "critical",
+          "skill_importance": "core"
+        }
+      ]
+    },
+    {
+      "phase_id": "fallback--applied",
+      "phase_title": "Applied Projects",
+      "phase_order": 3,
+      "skill": "multi-skill",
+      "source": "fallback_roadmap",
+      "nodes": [
+        {
+          "node_id": "fallback--api-gateway--project",
+          "label": "Full Stack Developer: Api Gateway Capstone",
+          "type": "project",
+          "category": "applied",
+          "importance": "core",
+          "difficulty": "advanced",
+          "estimated_hours": 18,
+          "depends_on": [
+            "fallback--api-gateway--core"
+          ],
+          "resources": {
+            "type": "project",
+            "format": "capstone"
+          },
+          "matched_skill": "api gateway",
+          "source_roadmap": "fallback_roadmap",
+          "original_node_id": "api-gateway--project",
+          "skill_status": "in_progress",
+          "skill_priority": "high",
+          "skill_importance": "core"
+        },
+        {
+          "node_id": "fallback--postgresql--project",
+          "label": "Full Stack Developer: Postgresql Capstone",
+          "type": "project",
+          "category": "applied",
+          "importance": "core",
+          "difficulty": "advanced",
+          "estimated_hours": 18,
+          "depends_on": [
+            "fallback--postgresql--core"
+          ],
+          "resources": {
+            "type": "project",
+            "format": "capstone"
+          },
+          "matched_skill": "postgresql",
+          "source_roadmap": "fallback_roadmap",
+          "original_node_id": "postgresql--project",
+          "skill_status": "locked",
+          "skill_priority": "critical",
+          "skill_importance": "core"
+        },
+        {
+          "node_id": "fallback--docker--project",
+          "label": "Full Stack Developer: Docker Capstone",
+          "type": "project",
+          "category": "applied",
+          "importance": "core",
+          "difficulty": "advanced",
+          "estimated_hours": 18,
+          "depends_on": [
+            "fallback--docker--core"
+          ],
+          "resources": {
+            "type": "project",
+            "format": "capstone"
+          },
+          "matched_skill": "docker",
+          "source_roadmap": "fallback_roadmap",
+          "original_node_id": "docker--project",
+          "skill_status": "locked",
+          "skill_priority": "critical",
+          "skill_importance": "core"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "fallback--api-gateway--foundation",
+      "target": "fallback--api-gateway--core",
+      "type": "required"
+    },
+    {
+      "source": "fallback--postgresql--foundation",
+      "target": "fallback--postgresql--core",
+      "type": "required"
+    },
+    {
+      "source": "fallback--docker--foundation",
+      "target": "fallback--docker--core",
+      "type": "required"
+    },
+    {
+      "source": "fallback--api-gateway--core",
+      "target": "fallback--api-gateway--project",
+      "type": "required"
+    },
+    {
+      "source": "fallback--postgresql--core",
+      "target": "fallback--postgresql--project",
+      "type": "required"
+    },
+    {
+      "source": "fallback--docker--core",
+      "target": "fallback--docker--project",
+      "type": "required"
+    }
+  ],
+  "db_result": {
+    "status": "dry_run",
+    "roadmap_id": "roadmap-agent--EMP001",
+    "phases": 3,
+    "nodes": 9,
+    "edges": 6
+  }
+}

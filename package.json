@@ -1,0 +1,9 @@
+{
+  "name": "learning-platform-runner",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev -- --host",
+    "frontend": "npm --prefix frontend run dev -- --host",
+    "backend": "python run.py"
+  }
+}
